@@ -1,4 +1,4 @@
-```markdown
+
 # Library Management System
 
 ## Description
@@ -8,7 +8,7 @@ The Library Management System is a demo of a web application designed to manage 
 This project utilizes Spring Boot for the backend, providing a robust and scalable architecture. It also implements JWT authentication for secure access to the API endpoints.
 
 ## Project Structure
-
+```markdown
 library-management-system/
 │
 ├── src/
@@ -38,7 +38,7 @@ library-management-system/
 │
 ├── pom.xml                                           # Maven project file for dependency management
 └── README.md                                         # This README file
-
+```
 
 ## Prerequisites
 - Java 17 or higher
@@ -59,19 +59,29 @@ library-management-system/
    cd library-management-system
    ```
 
-3. **Install dependencies**:
+3. **Configure the database**:
+   Before running the application, you need to set up the database. Open your MySQL command line or a database management tool and run the following SQL commands:
+   ```sql
+   CREATE DATABASE library_db;
+   CREATE USER 'library_user'@'localhost' IDENTIFIED BY 'password123';
+   GRANT ALL PRIVILEGES ON library_db.* TO 'library_user'@'localhost';
+   FLUSH PRIVILEGES;
+   ```
+   Make sure to replace `'password123'` with a strong password of your choice.
+
+4. **Install dependencies**:
    Run the following command to download the required dependencies:
    ```bash
    mvn install
    ```
 
-4. **Run the application**:
+5. **Run the application**:
    You can run the application using Maven:
    ```bash
    mvn spring-boot:run
    ```
 
-5. **Access the API**:
+6. **Access the API**:
    Once the application is running, you can access the API endpoints at `http://localhost:8080/api`. You can use tools like Postman or curl to interact with the API.
 
 ## API Documentation
