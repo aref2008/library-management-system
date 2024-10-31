@@ -7,6 +7,9 @@ The Library Management System is a demo of a web application designed to manage 
 
 This project utilizes Spring Boot for the backend, providing a robust and scalable architecture. It also implements JWT authentication for secure access to the API endpoints.
 
+![Swagger API Documentation](screenshots/swagger.png)
+
+
 ## Project Structure
 ```markdown
 library-management-system/
