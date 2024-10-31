@@ -103,4 +103,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the Spring community for providing great tools and frameworks.
 - Inspired by various open-source projects and the need for an efficient library management system.
-```
